@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<title>Homepage</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+body,h1,h2,h3,h4,h5,h6 {font-family: serif;}
+  border-collapse: collapse;
+  width: 50%;
+</style>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body style="background-color:#e6d1b0;">
+<div class="w3-container w3-black">
+<h1> Home Page &hearts;</h1>
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img1.jpeg" style="width:100%">
+  <img class="mySlides" src="img2.jpeg" style="width:110%">
+  <img class="mySlides" src="img3.jpeg" style="width:100%">
+  <img class="mySlides" src="image7.jpeg" alt=pictures with classmate featuring dr.fuzi style="width:100%">
+  <img class="mySlides" src="img4.jpeg" style="width:100%">
+  <img class="mySlides" src="img5.jpeg" style="width:100%">
+</div>
+<center><h5>Click the button below for more information.</h5></center>
+<marquee><img src="totoro1.gif" alt=Totoro" width="170" height="240"></marquee>
+<marquee style="color:#663e20;">Let's get into it!</marquee>
+<center><button onclick="document.location='index1.html'">Discover more about me >-<</button></center><br>
+<center><a href="https://www.instagram.com/"><img src="ig.png" alt="Instagram account" width="90" height="50"></a>
+<a href="https://www.youtube.com/"><img src="yt.webp" alt="YouTube" width="70" height="50"></a>
+<p>If you're interested to buy a new laptop or candle, do click the candle and laptop to go to their website &#128151;</p>
+<img src="study.jpeg" alt="Workplace" usemap="#workmap" width="736" height="818">
+<map name="workmap">
+<area shape="circle" coords="90,430,65" title="Go to Neom website" alt="candle" href="https://neomwellbeing.com/collections/candles">
+<area shape="rect" coords="227,163,647,732" title="Go to Lenovo website" alt="Laptop" href="https://www.lenovo.com/my/en/d/student/university/">
+</map>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<footer style="background-color:#d7a783; padding:5px; text-align:left;">
+  <p>&copy; Fatin &#9825;
+<center>Contact me via </p></center>
+<center><a href="mailto:fatihah6889@gmail.com" style="color: #663e20;">Email</a></center>
+</footer>
+</body>
+</html>
